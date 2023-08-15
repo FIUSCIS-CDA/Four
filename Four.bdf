@@ -4,9 +4,9 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -16,7 +16,8 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 */
 (header "graphic" (version "1.4"))
 (pin
@@ -676,10 +677,6 @@ refer to the applicable agreement for further details.
 	(pt 224 1680)
 )
 (connector
-	(pt 224 1616)
-	(pt 880 1616)
-)
-(connector
 	(text "Y[7]" (rect 209 1598 226 1618)(font "Intel Clear" )(vertical))
 	(pt 224 1632)
 	(pt 224 1616)
@@ -687,11 +684,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 224 1552)
 	(pt 888 1552)
-)
-(connector
-	(pt 888 1552)
-	(pt 888 1680)
-	(bus)
 )
 (connector
 	(text "Y[8]" (rect 209 1534 226 1554)(font "Intel Clear" )(vertical))
@@ -1025,6 +1017,20 @@ refer to the applicable agreement for further details.
 	(pt 224 96)
 	(pt 224 80)
 )
+(connector
+	(pt 224 1616)
+	(pt 888 1616)
+)
+(connector
+	(pt 888 1552)
+	(pt 888 1616)
+	(bus)
+)
+(connector
+	(pt 888 1616)
+	(pt 888 1680)
+	(bus)
+)
 (junction (pt 888 2000))
 (junction (pt 888 1984))
 (junction (pt 888 1872))
@@ -1055,3 +1061,4 @@ refer to the applicable agreement for further details.
 (junction (pt 888 208))
 (junction (pt 888 144))
 (junction (pt 888 80))
+(junction (pt 888 1616))
